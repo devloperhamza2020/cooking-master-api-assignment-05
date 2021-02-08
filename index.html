@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hungry Monstar</title>
+    <title>Hungry Monstar API Assignment-05</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <!-- This bootstrap CND Link -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- This is CSS Link -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,13 +30,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Features</a>
+                            <a class="nav-link active" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Pricing</a>
+                            <a class="nav-link active" href="#">Recipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Disabled</a>
+                            <a class="nav-link active" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -47,31 +52,28 @@
                 <div class="input-group mb-3 w-50 m-auto">
                     <input type="text" id="input-meal" class="form-control" placeholder="Search this types of keyword> egg or beef"
                         aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text src-btn" id="basic-addon2"><button onclick="searchFood()"
+                    <span class="input-group-text src-btn" id="basic-addon2"><button onclick="findFoods()"
                             class="btn text-white">Search</button></span>
                 </div>
             </div>
         </section>
+
+
         <section id="recipe-details" class="recipe-show mt-4">
             
         </section>
+
+
         <section class="menu-item-area" id="food-container">
             
         </section>
-        
     </main>
-
-
-
 
 
 
 
     <script src="script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

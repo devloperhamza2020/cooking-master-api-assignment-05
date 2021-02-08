@@ -1,9 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-*{
-    font-family: 'Roboto', sans-serif;
-}
 body{
     background-color: rgb(190, 214, 100);
 }
@@ -34,6 +29,7 @@ body{
 .menu-item-area{
     margin-top: 5%;
     margin-left: 10%;
+    cursor: pointer;
 }
 .menu-card{
     box-shadow: 10px 10px gray 10px;

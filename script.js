@@ -1,4 +1,4 @@
-const searchFood = () =>{
+const findFoods = () =>{
     const searchMeal = document.getElementById("input-meal").value;
     const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchMeal}`
     fetch(url)
@@ -22,7 +22,6 @@ const displayMeal = items =>{
             </div>    
         </div>
         `
-    
         foodContainer.appendChild(foodShowDiv);
     }
     
@@ -33,12 +32,13 @@ const getRecipe = (id) =>{
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
     fetch(url)
         .then(res=> res.json())
-        .then(meals => fullRecipe(meals.meals))
+        .then(meals => fullIngradiant(meals.meals))
         
 }
- // <p>${recipe.strInstructions}</p>
-// console.log(recipe.strInstructions)
-const fullRecipe = recipes =>{
+
+
+// This Ingradiant step
+const fullIngradiant = recipes =>{
     recipes.forEach(recipe => {
     const recipeDetails = document.getElementById('recipe-details');
         recipe.innerHTML = ' ';
