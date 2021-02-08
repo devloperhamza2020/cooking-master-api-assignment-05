@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(190, 214, 100);
+}
+.logo{
+    font-size: 25px;
+}
+.header-area{
+    margin-top: 2%;
+    overflow: hidden;
+    color: #383838;
+}
+.header-item{
+    float: right;
+    margin-left: auto;
+    font-size: 18px;
+}
+.search-area{
+    overflow: hidden;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.src-btn{
+    background-color: rgb(26, 129, 212);
+}
+.src-btn:hover{
+    background-color: rgb(228, 168, 168);
+}
+.menu-item-area{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.menu-card{
+    box-shadow: 10px 10px gray 10px;
+}
+.recipe-details{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.food-card{
+    float: left;
+    display: grid;
+    margin: 15px;
+}
+.card-img{
+    margin-top: 10px
+}
+.card-text{
+    margin: 10px;
+}
+.card-text li{
+    margin-left: 15px;
+}
+.card-title{
+    font-weight: bold;
+}
+.name{
+    font-weight: bold;
+}
