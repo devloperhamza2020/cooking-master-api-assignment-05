@@ -3,10 +3,10 @@ const findFoods = () =>{
     const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchMeal}`
     fetch(url)
         .then(res => res.json())
-        .then(meals => displayMeal(meals.meals));
+        .then(meals => displayMenu(meals.meals));
 }
 
-const displayMeal = items =>{
+const displayMenu = items =>{
     const foodContainer = document.getElementById('food-container');
     foodContainer.innerHTML = ' ';
     for (let i = 0; i < items.length; i++) {
@@ -37,7 +37,7 @@ const getRecipe = (id) =>{
 }
 
 
-// This Ingradiant step
+// This is Ingradiant step
 const fullIngradiant = recipes =>{
     recipes.forEach(recipe => {
     const recipeDetails = document.getElementById('recipe-details');
